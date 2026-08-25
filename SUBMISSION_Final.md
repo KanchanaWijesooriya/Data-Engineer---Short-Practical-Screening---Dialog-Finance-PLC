@@ -4,8 +4,8 @@
 
 This is the way i handle these requested operations in assessment, for more information go to the optional notes section.
 
-Task 1 explicitly asking in question,
-"Inspect `recharge_events.csv` and report the exact count of each of the following, plus one sentence on how you would handle it in a production pipeline" it asking "Inspect `recharge_events.csv` and report the exact count of each" so i used the same raw data file to perform assessment task 1 parts considering as 03 separate tasks, and didn't use clean data set earlier part for next part in task 1.
+Task 1 explicitly asking in question, So I assuming,
+"Inspect `recharge_events.csv` and report the exact count of each of the following, plus one sentence on how you would handle it in a production pipeline" it asking to use only"`recharge_events.csv` and report the exact count of each" so i used the same raw data file to perform assessment task 1 parts considering as 03 separate tasks, and didn't use clean data set earlier part for next part in task 1.
 
 So, in task 2 I ran these task 1 steps again as a continuously running pipeline to deduplicate, exclude invalid rows.
 
@@ -40,7 +40,8 @@ So, in task 2 I ran these task 1 steps again as a continuously running pipeline 
     - `ingestion_ts` = 2026-03-18 14:20:38 (Meridian didn't actually log this top-up until after the application)
 - `RCH_01373` is a top-up that happened on 2026-03-12, which falls within the 30 days before application `APP_0001` was submitted on 2026-03-17. A careless implementation that only checks whether event_ts falls in the 30-day window would wrongly count it, but this record wasn't actually ingested into Meridian's system until 2026-03-18, a day after the application was already made, so it couldn't have been available to a loan officer at decision time and should be excluded.
 
-**(c) Video Link:**  
+**(c) Video Link:**  [Short Demo Video of explaining task 2 click here](https://drive.google.com/file/d/1ew-yve_wNn7abzYHYGUQKNIQx4vT6fGu/view?usp=sharing) or view directly https://drive.google.com/file/d/1ew-yve_wNn7abzYHYGUQKNIQx4vT6fGu/view?usp=sharing  
+If you feels video quality is low try it 720P
 
 ## Notes / assumptions (optional)
 
