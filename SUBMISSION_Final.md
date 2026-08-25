@@ -78,5 +78,7 @@ If you feels video quality is low try it 720P
       which applies to any row regardless of whether it's a genuine
       top-up or a reversal. So, there's no reason to treat them
       differently for this particular check.
-
+   
+### AI usage:
+ - As a code reviewer and also used to reduced the redundancy of code.
 
