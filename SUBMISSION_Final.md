@@ -6,6 +6,8 @@ This is the way i handle these requested operations in assessment, for more info
 
 All the steps are ccelarly in this qork drectory, so do not try to change file locations.
 
+This assessment has done by the using `python + pandas`. To run code scripts, you need to install python and pandas (`pip install pandas`) in your work environment.
+
 if any script want to run and seen the result execute => `python copy_relative_path of file.py`
 
 Task 1 explicitly asking in question, So I assuming,
