@@ -4,6 +4,10 @@
 
 This is the way i handle these requested operations in assessment, for more information go to the optional notes section.
 
+All the steps are ccelarly in this qork drectory, so do not try to change file locations.
+
+if any script want to run and seen the result execute => `python copy_relative_path of file.py`
+
 Task 1 explicitly asking in question, So I assuming,
 "Inspect `recharge_events.csv` and report the exact count of each of the following, plus one sentence on how you would handle it in a production pipeline" it asking to use only"`recharge_events.csv` and report the exact count of each" so i used the same raw data file to perform assessment task 1 parts considering as 03 separate tasks, and didn't use clean data set earlier part for next part in task 1.
 
